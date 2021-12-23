@@ -1,6 +1,6 @@
-id=SourceHanVF
-name=Source Han VF
-version=2.0 (Hans VF: 2.004 & Serif VF: 2.000R)
-versionCode=7
-author=Wordless Echo
-description=A module replace CJK fonts to Source Han Variable.
+id=SourceHanVFEanaMod
+name=Source Han VF (Eana Mod)
+version=2.0.1 (Hans VF: 2.004 & Serif VF: 2.000R)
+versionCode=8
+author=Wordless Echo / Eana Hufwe
+description=A module replace CJK fonts to Source Han Variable. Filename modified for Pixel on Android 12.

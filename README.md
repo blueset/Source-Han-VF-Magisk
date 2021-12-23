@@ -1,10 +1,20 @@
 # Source Han VF Magisk
 A module replace CJK fonts to Source Han Variable.
 
-Sister module: [Noto-CJK-VF-Magisk](https://github.com/WordlessEcho/Noto-CJK-VF-Magisk)
+~~Sister module: [Noto-CJK-VF-Magisk](https://github.com/WordlessEcho/Noto-CJK-VF-Magisk)~~
+
+## Modified content
+Renamed font files to `NotoSansCJK-Redular.ttc` and `NotoSerifCJK-Regular.ttc`, both of which already exist in the system.
+
+This is an attempt to resolve the issue where apps in MagiskHide/DenyList crashes when trying to render texts in CJK on Android 12.
+
+> Starting from Android 12, font files are only loaded on demand (when rendering relevant UI components), referring to any font file not already existing in the system pre-Magisk would lead to such apps to crash due to inability to find such font file. This would render any Magisk packages introducing font file with new names unusable with such apps.
+
+[Relevant issue](https://github.com/WordlessEcho/Source-Han-VF-Magisk/issues/4)
 
 ## Requirement
-Android 8.0 and above. 9.0 for serif support.
+~~Android 8.0 and above. 9.0 for serif support.~~
+Android 12 running on Google Pixel phones (tested on Pixel 6 Pro).
 
 ## Advantage
 Compare to normal super OTC version, only 38.9MB for all weight.
